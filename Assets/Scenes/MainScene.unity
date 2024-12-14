@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 58055494}
   - component: {fileID: 58055493}
   - component: {fileID: 58055492}
+  - component: {fileID: 58055496}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -229,6 +230,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &58055496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58055491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01b5f0cc720b684f955c98d6566040c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shapeName: Cilinder
+  shapeColor: {r: 1, g: 0, b: 0, a: 0}
+  message: Hi.
 --- !u!1 &195221242
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +915,7 @@ GameObject:
   - component: {fileID: 1445318849}
   - component: {fileID: 1445318848}
   - component: {fileID: 1445318847}
+  - component: {fileID: 1445318851}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -995,6 +1012,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1445318851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445318846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556b721bebbb07740b08e64c768b525c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shapeName: Cube
+  shapeColor: {r: 0, g: 1, b: 0, a: 0}
+  message: 
 --- !u!1 &2122778861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,6 +1142,7 @@ GameObject:
   - component: {fileID: 2129513774}
   - component: {fileID: 2129513773}
   - component: {fileID: 2129513772}
+  - component: {fileID: 2129513776}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1206,6 +1239,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2129513776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129513771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c44227a3e166746b4d18679c4002a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shapeName: Sphere
+  shapeColor: {r: 0, g: 0, b: 1, a: 0}
+  message: Hallo there!
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
