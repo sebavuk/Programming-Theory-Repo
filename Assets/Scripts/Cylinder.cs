@@ -1,11 +1,9 @@
+using TMPro;
 using UnityEngine;
 
 public class Cylinder :Shape
 {
-    [SerializeField]
-    private string message;
-    
-
+  
     private void Start()
     {
         GetComponent<Renderer>().material.color = ShapeColor;
@@ -13,6 +11,11 @@ public class Cylinder :Shape
 
     public override void ShowMessage()
     {
-        Debug.Log($"{message} I am a {ShapeName}");
+        GameObject.Find("InfoText").GetComponent<TextMeshProUGUI>().text = $"Hi {GameManager.Instance.PlayerName}. I am a {ShapeName}";
+    }
+
+    private void OnMouseDown()
+    {
+        ShowMessage();
     }
 }

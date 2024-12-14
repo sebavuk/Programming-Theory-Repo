@@ -16,8 +16,8 @@ public class GameManager : MonoBehaviour
         }
         set
         {
-            value.ToLower().FirstCharacterToUpper();
-            playerName = value;
+
+            playerName = value.ToLower().FirstCharacterToUpper();
         }
     }
 

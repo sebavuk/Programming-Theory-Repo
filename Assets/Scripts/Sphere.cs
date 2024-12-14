@@ -1,10 +1,8 @@
+using TMPro;
 using UnityEngine;
 
 public class Sphere : Shape
 {
-    [SerializeField]
-    private string message;
-
 
     private void Start()
     {
@@ -13,6 +11,12 @@ public class Sphere : Shape
 
     public override void ShowMessage()
     {
-        Debug.Log($"{message} I am a {ShapeName}");
+
+        GameObject.Find("InfoText").GetComponent<TextMeshProUGUI>().text = $"Hallo {GameManager.Instance.PlayerName}. I am a {ShapeName}";
+    }
+
+    private void OnMouseDown()
+    {
+        ShowMessage();
     }
 }
