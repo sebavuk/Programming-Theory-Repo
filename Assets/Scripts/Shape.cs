@@ -8,8 +8,8 @@ public class Shape : MonoBehaviour
     [SerializeField]
     private Color shapeColor;
     
-    public string ShapeName { get => shapeName; set => shapeName = value; }
-    public Color ShapeColor { get => shapeColor; set => shapeColor = value; }
+    public string ShapeName { get => shapeName; set => shapeName = value; }// ENCAPSULATION
+    public Color ShapeColor { get => shapeColor; set => shapeColor = value; }// ENCAPSULATION
 
 
     public virtual void ShowMessage()

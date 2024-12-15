@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     private string playerName;
-    public string PlayerName
+    public string PlayerName // ENCAPSULATION
     {
         get
         {
@@ -17,11 +17,14 @@ public class GameManager : MonoBehaviour
         set
         {
 
-            playerName = value.ToLower().FirstCharacterToUpper();
+            playerName = CorrectName(value);// ABSTRACTION
         }
     }
 
-
+    private string CorrectName(string name)
+    {
+        return name.ToLower().FirstCharacterToUpper();
+    }
 
     private void Awake()
     {
@@ -36,12 +39,6 @@ public class GameManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
-    }
-
-
-    private void OnMouseDown()
-    {
-        Debug.Log("Mouse clicked!");
     }
 
 

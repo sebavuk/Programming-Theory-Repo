@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class Cylinder :Shape
+public class Cylinder : Shape // INHERITANCE
 {
   
     private void Start()
@@ -9,7 +9,7 @@ public class Cylinder :Shape
         GetComponent<Renderer>().material.color = ShapeColor;
     }
 
-    public override void ShowMessage()
+    public override void ShowMessage()// POLYMORPHISM
     {
         GameObject.Find("InfoText").GetComponent<TextMeshProUGUI>().text = $"Hi {GameManager.Instance.PlayerName}. I am a {ShapeName}";
     }
